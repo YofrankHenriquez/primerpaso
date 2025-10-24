@@ -1,6 +1,14 @@
+---
+interface Props{
+  title:string
+}
+
+const { title} = Astro.props
+---
+
 <div>
     <span>icono</span>
-    <h3>Membership</h3>
+    <h3>{ title }</h3>
     <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
         reiciendis consequatur voluptatum similique eius atque blanditiis
