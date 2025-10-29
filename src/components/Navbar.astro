@@ -1,10 +1,10 @@
 <header>
-    <nav>
-        <div>
+    <nav class="menu">
+        <div class="logo">
             <span>icono</span>
             <p>nexcent</p>
         </div>
-        <div>
+        <div class="enlace">
             <a href="">Home</a>
             <a href=""></a>
             <a href=""></a>
@@ -13,8 +13,42 @@
             <a href=""></a>
         </div>
         <div>
-            <button></button>
-            <button></button>
+            <button class="button1">login</button>
+            <button>sing up</button>
         </div>
     </nav>
 </header>
+
+<style>
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 64px;
+
+    }
+    .logo {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+    .enlace {
+        display: flex;
+        gap: 32px;
+    }
+
+    .button1{
+        /* color de fondo */
+        background-color: aliceblue rdg(166, 45, 45);
+        /* espacios a los lados  */
+        padding: 8px 24px;
+        /* color de texto */
+        color: chartreuse;
+        /* redondeado de bordes */
+        border-radius: 5px;
+        /* grosor de texto */
+        font-weight: bold;
+    }
+
+    
+</style>
