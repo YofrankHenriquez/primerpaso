@@ -1,18 +1,16 @@
 ---
 interface Props{
   title:string
+  parrafo : string
 }
 
-const { title} = Astro.props
+const { title, parrafo } = Astro.props
 ---
 
 <div>
     <span>icono</span>
     <h3>{ title }</h3>
     <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
-        reiciendis consequatur voluptatum similique eius atque blanditiis
-        corrupti, tenetur enim, deserunt labore! Culpa aspernatur placeat, neque
-        quaerat aliquid voluptatum error atque.
+       {parrafo}
     </p>
 </div>
