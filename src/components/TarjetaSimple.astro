@@ -1,16 +1,24 @@
 ---
+import{ Icon } from 'astro-icon/components'
+
 interface Props{
+  icono:string
   title:string
   parrafo : string
 }
 
-const { title, parrafo } = Astro.props
+const { title, parrafo,icono} = Astro.props
+
 ---
 
 <div>
-    <span>icono</span>
+     <Icon name={icono} width={64} height={64} />
     <h3>{ title }</h3>
     <p>
        {parrafo}
     </p>
 </div>
+
+<style>
+
+</style>

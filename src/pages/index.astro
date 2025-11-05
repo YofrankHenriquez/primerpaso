@@ -1,29 +1,52 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Jumbotron from '../components/Jumbotron.astro'
-import TarjetaSimple from '../components/TarjetaSimple.astro';
+import Layout from "../layouts/Layout.astro";
+import Jumbotron from "../components/Jumbotron.astro";
+import TarjetaSimple from "../components/TarjetaSimple.astro";
+
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
+const cardList = [
+    {
+        title: "Membership Organisation",
+        parrafo:
+            "Our membership management software provides full automation of membership renewals and payments ",
+        icono: 'tarjeta1'
+    },
+    {
+        title: "National Associationsent",
+        parrafo:
+            "membership management software provides full automation of membership renewals and paym",
+        icono: 'tarjeta2'
+    },
+    {
+        title: "clubs and groups",
+        parrafo:
+            "Our membership managemet sofware provides full automation of membership renewals and payments",
+        icono: 'tarjeta3'
+    },
+];
 ---
 
 <Layout>
-    <Jumbotron /> 
+    <Jumbotron />
 
-
-    
     <section>
-
         <h2>Manage your entire community in a single systen</h2>
         <p>Who is nexcent suitable for?</p>
 
         <div>
-            <TarjetaSimple title='Membership Organisation' parrafo='Our membership management software provides full automation of membership renewals and payments ' />
-            <TarjetaSimple title='National Associations' parrafo='Our membership management software provides full automation of membership renewals and payment' />
-            <TarjetaSimple title='clubs and groups'parrafo='Our membership managemet sofware provides full automation of membership renewals and payments' />
-
+            {
+                cardList.map(function (props) {
+                    return (
+                        <TarjetaSimple
+                            title={props.title}
+                            parrafo={props.parrafo}
+                            icono={props.icono}
+                        />
+                    );
+                })
+            }
         </div>
-
     </section>
-    
 </Layout>
-
