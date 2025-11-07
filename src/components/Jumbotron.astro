@@ -22,8 +22,15 @@
         justify-content:  center;
         gap: 32px;
     }
+@media (max-width:768px) {
+     section {
+        flex-direction: column-reverse;
+        text-align: center;
 
-    h1 {
+    }
+    
+}
+  h1 {
         font-weight: bold;
         font-size: 56px;
         line-height: 58px;
@@ -38,13 +45,31 @@
         gap: 32px;
         align-items: start;
     }
+
+
+ @media (max-width:768px) {
+        .eheeee{
+            align-items: center;
+
+        }
+        
+    }
+      
     button{
         background-color: #4caf4f;
         color: aliceblue;
         padding: 12px 36px;
         border-radius: 10px;
         font-weight: 700;
+        transition: background .3s ease-in-out;
+        cursor:pointer;
     }
+
+    button:hover{
+        background-color: #229826;
+
+    }
+   
 
 </style>
 

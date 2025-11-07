@@ -16,19 +16,30 @@ import { Icon } from 'astro-icon/components'
             <a href="">Testimonial</a>
             <a href="">Faq</a>
         </div>
+
+
+
+
         <div>
-            <button class="button1">loginLogin</button>
+            <button class="button1">login</button>
             <button class="button2">sing up</button>
         </div>
+
+
+        <div id="menu">menu</div>
+
     </nav>
 </header>
 
 <style>
+
     .menu {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 12px 64px;
+
+
 
     }
     .logo {
@@ -38,8 +49,34 @@ import { Icon } from 'astro-icon/components'
     }
     .enlace {
         display: flex;
-        gap: 84px;
+        gap: 32px;
     }
+
+
+    @media (max-width: 768px) {
+        .enlace {
+            position: absolute;
+            top: 60px;
+            background-color: #fff;
+            z-index: 100;
+            flex-direction: column;
+            width: 100%;
+            gap: 12px;
+            left: -100;
+            transition: left .3s ease-in-out;
+        }
+
+.enlaces.show {
+    left: 0;
+}
+
+
+
+    }
+
+
+
+
 
     .button1{
         * color de fondo */
@@ -65,5 +102,24 @@ import { Icon } from 'astro-icon/components'
 
         }
 
+    #menu {
+        display: none;
+
+
+    }
+    @media (max-width 768px) {
+        #menu
+
+    }
     
 </style>
+
+<script>
+    
+
+ document.getElementById('menu')?.addEventListener('click', function (){
+       document.getElementById('enlaces')?.classList.
+       toggle('show')
+
+ })
+</script>
