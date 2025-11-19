@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Jumbotron from "../components/Jumbotron.astro";
 import TarjetaSimple from "../components/TarjetaSimple.astro";
+import Divicionseccione from "../components/Divicionseccione.astro";
+import Iconos from "../components/Iconos.astro"
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -11,19 +13,19 @@ const cardList = [
         title: "Membership Organisation",
         parrafo:
             "Our membership management software provides full automation of membership renewals and payments ",
-        icono: 'tarjeta1'
+        icono: "tarjeta1",
     },
     {
         title: "National Associationsent",
         parrafo:
             "membership management software provides full automation of membership renewals and paym",
-        icono: 'tarjeta2'
+        icono: "tarjeta2",
     },
     {
         title: "clubs and groups",
         parrafo:
             "Our membership managemet sofware provides full automation of membership renewals and payments",
-        icono: 'tarjeta3'
+        icono: "tarjeta3",
     },
 ];
 ---
@@ -31,11 +33,13 @@ const cardList = [
 <Layout>
     <Jumbotron />
 
+    <Divicionseccione image="/Illustration.png" title="Yhe unseen of spending" param="" />
+
     <section>
         <h2>Manage your entire community in a single systen</h2>
         <p>Who is nexcent suitable for?</p>
 
-        <div>
+        <div class="tarjetasimple">
             {
                 cardList.map(function (props) {
                     return (
@@ -49,4 +53,15 @@ const cardList = [
             }
         </div>
     </section>
+
+    <Divicionseccione image="/Illustration.png" title="" param="" />
+
+    <Iconos />
 </Layout>
+
+<style>
+    .tarjetasimple {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+</style>

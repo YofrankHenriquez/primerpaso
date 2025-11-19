@@ -1,37 +1,36 @@
 ---
-import{ Icon } from 'astro-icon/components'
+import { Icon } from "astro-icon/components";
 
-interface Props{
-  icono:string
-  title:string
-  parrafo : string
+interface Props {
+  icono: string;
+  title: string;
+  parrafo: string;
 }
 
-const { title, parrafo,icono} = Astro.props
-
+const { title, parrafo, icono } = Astro.props;
 ---
 
 <div class="tarjetasimple">
-     <Icon name={icono} width={64} height={64} />
-    <h3>{ title }</h3>
-    <p>
-       {parrafo}
-    </p>
+  <Icon name={icono} width={64} height={64} />
+  <h3>{title}</h3>
+  <p>
+    {parrafo}
+  </p>
 </div>
 
 <style>
-.tarjetasimple {text-align: center;
+  .tarjetasimple {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-}
+  p {
+  }
 
-p {
-
-}
-
-h3 {
-  font-size: 24px;
-  font-weight: 700;
-  
-}
-
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+  }
 </style>
