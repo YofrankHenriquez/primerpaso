@@ -1,11 +1,11 @@
 ---
-import { Icon } from 'astro-icon/components'
+import { Icon } from "astro-icon/components";
 ---
 
 <header>
     <nav class="menu">
         <div class="logo">
-            <Icon name={'logo'} />
+            <Icon name={"logo"} />
             <p>nexcent</p>
         </div>
         <div class="enlace">
@@ -17,30 +17,21 @@ import { Icon } from 'astro-icon/components'
             <a href="">Faq</a>
         </div>
 
-
-
-
         <div>
             <button class="button1">login</button>
             <button class="button2">sing up</button>
         </div>
 
-
         <div id="menu">menu</div>
-
     </nav>
 </header>
 
 <style>
-
     .menu {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 12px 64px;
-
-
-
     }
     .logo {
         display: flex;
@@ -52,7 +43,6 @@ import { Icon } from 'astro-icon/components'
         gap: 32px;
     }
 
-
     @media (max-width: 768px) {
         .enlace {
             position: absolute;
@@ -63,23 +53,16 @@ import { Icon } from 'astro-icon/components'
             width: 100%;
             gap: 12px;
             left: -100;
-            transition: left .3s ease-in-out;
+            transition: left 0.3s ease-in-out;
         }
-
-.enlaces.show {
-    left: 0;
-}
-
-
-
     }
 
+    .enlaces.show {
+        left: 0;
+    }
 
-
-
-
-    .button1{
-        * color de fondo */
+    .button1 {
+        /* color de fondo */
         background-color: aliceblue rdg(166, 45, 45);
         /* espacios a los lados  */
         padding: 8px 24px;
@@ -91,35 +74,26 @@ import { Icon } from 'astro-icon/components'
         font-weight: bold;
     }
 
-
-        .button2{ 
-            background-color: chartreuse;
-            padding: 8px 24px;
-            color: aliceblue;
-            border-radius: 5px;
-            font-weight: bold;
-
-
-        }
+    .button2 {
+        background-color: chartreuse;
+        padding: 8px 24px;
+        color: aliceblue;
+        border-radius: 5px;
+        font-weight: bold;
+    }
 
     #menu {
         display: none;
-
-
     }
     @media (max-width 768px) {
-        #menu
-
+        #menu {
+            display: block;
+        }
     }
-    
 </style>
 
 <script>
-    
-
- document.getElementById('menu')?.addEventListener('click', function (){
-       document.getElementById('enlaces')?.classList.
-       toggle('show')
-
- })
+    document.getElementById("menu")?.addEventListener("click", function () {
+        document.getElementById("enlaces")?.classList.toggle("show");
+    });
 </script>
