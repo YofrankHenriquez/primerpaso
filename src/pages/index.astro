@@ -46,19 +46,18 @@ quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar od
         <h2>Manage your entire community in a single systen</h2>
         <p>Who is nexcent suitable for?</p>
 
-        <div class="tarjetasimple">
-            {
+        <div class="tarjetasimple">{
                 cardList.map(function (props) {
                     return (
                         <TarjetaSimple
                             title={props.title}
                             parrafo={props.parrafo}
-                            icono={props.icono}
-                        />
+                            icono={props.icono}/>
                     );
                 })
             }
         </div>
+
     </section>
 
     <Divicionseccione
