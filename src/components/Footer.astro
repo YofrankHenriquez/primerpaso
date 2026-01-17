@@ -1,37 +1,5 @@
-<footer>
-    <div>
-        <h4>company</h4>
 
-        <ul>
-            <li>about us</li>
-            <li>blog</li>
-            <li>contact us</li>
-            <li>pricing</li>
-            <li>testimonials</li>
-        </ul>
-    </div>
-    <div>
-        <h4>support</h4>
 
-        <ul>
-            <li>help center</li>
-            <li>terms of service</li>
-            <li>legal</li>
-            <li>privacy policy</li>
-            <li>status</li>
-        </ul>
-    </div>
-
-    <div>
-        <h4>stary up to date </h4>
-        <form action="">
-            <input type="text" name="" id="">
-            <button type="submit">
-                Icono
-            </button>
-        </form>
-    </div>
-</footer>
 <footer class="footer">
   <div class="footer-container">
     
@@ -79,5 +47,72 @@
 
   </div>
 </footer>
+.footer {
+  background-color: #263238; /* Color oscuro del fondo */
+  color: #ffffff;
+  padding: 60px 20px;
+  font-family: sans-serif;
+}
 
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Para que sea responsivo en móviles */
+}
+
+.footer-column {
+  margin-bottom: 20px;
+}
+
+.footer-column h3 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+  color: #D9DBE1;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-column ul li a:hover {
+  color: #4CAF4F; /* Color verde Nexcent al pasar el mouse */
+}
+
+/* Estilo para el input de correo */
+.input-group {
+  position: relative;
+  display: flex;
+}
+
+.input-group input {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  width: 100%;
+}
+
+.input-group button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
 
