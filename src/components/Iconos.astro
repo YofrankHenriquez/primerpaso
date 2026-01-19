@@ -1,20 +1,30 @@
 ---
-import { Icon } from "astro-icon/components";
+import { Icon } from "astro-icon/components"
 ---
 
-<div>
-    <h2>Our clients</h2>
 
-    <p>We have been working with some fortune 500 clients</p>
+<section class="clients-section">
+    <h2>Our Clients</h2>
+    <p>We have been working with some Fortune 500+ clients</p>
+</section>
 
-    <div>
-        <Icon name={"Logo (1)"} />
-        <Icon name={"Logo (2)"} />
-        <Icon name={"Logo (3)"} />
-        <span>icono</span>
-        <span>icono</span>
-        <span>icono</span>
-        <span>icono</span>
+<style>
+    /* Estilos básicos para que se vea igual a tu imagen */
+    .clients-section {
+        text-align: center;
+        padding: 40px 20px;
+        font-family: sans-serif;
+    }
 
-    </div>
-</div>
+    h2 {
+        font-size: 36px;
+        color: #4D4D4D;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #717171;
+        margin-top: 0;
+    }
+</style>

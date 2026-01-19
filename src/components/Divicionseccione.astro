@@ -18,7 +18,7 @@ const { image, title, param } = Astro.props
 
       <p>{param}</p>
       <!-- Esta parte no se cambia -->
-      <button>Learn More</button>
+      <button class="buttondoble">Learn More</button>
    </div>
 </section>
 
@@ -26,6 +26,13 @@ const { image, title, param } = Astro.props
    section {
       display: flex;
    }
-
+   .buttondoble
+    background-color: #4caf4f;
+        color: aliceblue;
+        padding: 12px 36px;
+        border-radius: 10px;
+        font-weight: 700;
+        transition: background .3s ease-in-out;
+        cursor:pointer;
 </style>
 
